@@ -1,0 +1,26 @@
+body{
+  background: #0C172B;
+}
+.triangle{
+  top: 20%;
+  left: 50%;
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: transparent;
+  overflow: hidden;
+}
+.triangle::before
+{
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transform-origin: bottom left;
+  border: 2px solid #fff;
+  position: absolute;
+  transform: rotate(45deg);
+  background: #29ed9a;
+}
