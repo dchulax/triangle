@@ -4,12 +4,17 @@ $(document)(() => {
        var fieldTwo = parseInt($("input#field-two").val('Enter only numbers'));
        var fieldThree = parseInt($("input#field-three").val('Enter only numbers'));
        const triangles = (a,b,c) =>{
-         if (this instanceof triangles){
+         if (this instanceof triangle){
            const this.a = a;
            const this.b = b;
            const this.c = c;
          }else{
-           return new triangles[];
+           return new triangle[];
+         }
+       };
+       triangles.prototype.kind= () => {
+         if(this.a === 0 || this.b === 0 || this.c === 0){
+           $("#not-triangle").show();
          }
        }
      });
