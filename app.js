@@ -17,6 +17,8 @@ $(document)(() => {
            $("#not-triangle").show();
          }else if(this.a < 0 || this.b < 0 || this.c < 0){
            $("#invalid").show();
+         }else if (this.a + this.b <= this.c || this.a + this.c <= b || this.a <= this.c){
+           $("#invalid").show();
          }
        }
      });
