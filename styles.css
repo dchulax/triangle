@@ -19,7 +19,6 @@ input{
   margin: 10px;
   border-color: #45ffba;
   border-image: none;    -webkit-rtl-ordering: none;
-
   background-color: rgba(255, 255, 255, 0.9);
 }
 button{
@@ -27,6 +26,9 @@ button{
   min-width: 150px;
   border-radius: 25px;
   background-color: rgba(255, 45, 45, 0.5);
+}
+#equilateral,#isosceles,#scalene,#invalid,#not-triangle{
+  display: none;
 }
 .triangle{
   display: flex;

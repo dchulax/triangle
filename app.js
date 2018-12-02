@@ -9,7 +9,7 @@ $(document)(() => {
            const this.b = b;
            const this.c = c;
          }else{
-           return new triangle[];
+           return new triangle(a,b,c);
          }
        };
        triangles.prototype.kind= () => {
@@ -29,4 +29,5 @@ $(document)(() => {
        }
      });
 });
+event.preventDefault()
 module.exports = triangles;
