@@ -21,6 +21,10 @@ $(document)(() => {
            $("#invalid").show();
          }else if(this.a === this.b && this.b ==== this.c){
            $("#equilateral").show();
+         }else if(this.a === this.b || this.b === this.c || this.a === this.c){
+           $("#isosceles").show();
+         }else{
+           $("#scalene").show();
          }
        }
      });
