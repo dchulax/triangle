@@ -1,8 +1,8 @@
 $(document)(() => {
      $form#fields.submit((event) {
-       var fieldOne = parseInt($("input#field-one").val('Enter only numbers'));
-       var fieldTwo = parseInt($("input#field-two").val('Enter only numbers'));
-       var fieldThree = parseInt($("input#field-three").val('Enter only numbers'));
+       var fieldOne = parseInt($("input#field-one").val());
+       var fieldTwo = parseInt($("input#field-two").val());
+       var fieldThree = parseInt($("input#field-three").val());
        const triangles = (a,b,c) =>{
          if (this instanceof triangle){
            const this.a = a;
