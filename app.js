@@ -1,21 +1,18 @@
+const this.a = a;
+const this.b = b;
+const this.c = c;
 
-  var a = (c, b) => {
-    return c - b;
-  };
+const this.aSquared =  a*a;
+const this.bSquared = b*b;
+const this.cSquared = c*c;
 
-  var b = (c, a) => {
-    return c - a;
-  };
-
-  var c = (a, b) => {
-    return a + b;
-  };
-}
-$const = triangle.(document)(() => {a
+$const = triangle.(document)(() => {
   getElementByClass.submit(function(event) {
    var fieldOne = parseInt($("input#field-one").val('Enter only numbers'));
    var fieldTwo = parseInt($("input#field-two").val('Enter only numbers'));
    var fieldThree = parseInt($("input#field-three").val('Enter only numbers'));
-   if (field())
+   if (field(fieldOne, fieldTwo, fieldThree){
+
+   })
 
 }));
