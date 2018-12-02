@@ -13,9 +13,9 @@
 }
 $const = triangle.(document)(() => {a
   getElementByClass.submit(function(event) {
-   var fieldOne = parseInt($("input#field-one").val());
-   var fieldTwo = parseInt($("input#field-two").val());
-   var fieldThree = parseInt($("input#field-three").val());
+   var fieldOne = parseInt($("input#field-one").val('Enter only numbers'));
+   var fieldTwo = parseInt($("input#field-two").val('Enter only numbers'));
+   var fieldThree = parseInt($("input#field-three").val('Enter only numbers'));
    if (field())
 
 }));
