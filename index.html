@@ -5,19 +5,30 @@
     <title>Triangle</title>
     <link rel="shortcut icon" href="img/favicon-32x32.png">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
   </head>
   <body>
       <div class="container">
         <div class="triangle"></div>
-        <div class="fills">
-          <form class="" action="index.html" method="post">
-            <input type="text" name="" value="">
-            <input type="text" name="" value="">
-            <input type="text" name="" value="">
-          </form>
-        </div>
-      </div>
+          <form class="fields" action="index.html" method="post">
+            <div class="form-grp">
+              <label>First Side:</label>
+              <input id="field-one" type="text" name="" value="Enter only numbers">
+            </div>
+            <div class="form-grp">
+              <label>Second Side:</label>
+              <input id="field-two" type="text" name="" value="Enter only numbers">
+            </div>
+            <div class="form-grp">
+              <label>Third Side:</label>
+              <input id="field-three" type="text" name="" value="Enter only numbers">
+            </div>
 
-      <script type="text/javascript" src="app.js"></script>
+
+
+            <button type="submit" class="btn">Send Request</button>
+          </form>
+     </div>
   </body>
 </html>
