@@ -19,6 +19,8 @@ $(document)(() => {
            $("#invalid").show();
          }else if (this.a + this.b <= this.c || this.a + this.c <= b || this.a <= this.c){
            $("#invalid").show();
+         }else if(this.a === this.b && this.b ==== this.c){
+           $("#equilateral").show();
          }
        }
      });
