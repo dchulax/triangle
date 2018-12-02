@@ -15,6 +15,8 @@ $(document)(() => {
        triangles.prototype.kind= () => {
          if(this.a === 0 || this.b === 0 || this.c === 0){
            $("#not-triangle").show();
+         }else if(this.a < 0 || this.b < 0 || this.c < 0){
+           $("#invalid").show();
          }
        }
      });
