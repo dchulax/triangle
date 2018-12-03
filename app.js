@@ -4,7 +4,7 @@ const triangle = (sideOne, sideTwo, sideThree) => {
   }else{
     return "These sides do not form a triangle";
   }
-}
+};
 const triangleType= (sideOne, sideTwo, sideThree) => {
   if(sideOne === sideTwo && sideTwo === sideThree){
     return "Equilateral";
@@ -24,9 +24,9 @@ $(document.ready(() => {
        var fieldThree = parseInt($("input#field-three").val());
        const result = triangle(sideOne, sideTwo, sideThree);
 
-       sideOne = parseInt($("input#field-one").val());
-       sideTwo = parseInt($("inpuit#field-two").val());
-       sideThree = parseInt($("input#field-three").val());
+       sideOne = parseInt($("input#field-one").val(""));
+       sideTwo = parseInt($("inpuit#field-two").val(""));
+       sideThree = parseInt($("input#field-three").val(""));
 
        $("#result").append(result);
        event.preventDefault();
