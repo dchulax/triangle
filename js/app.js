@@ -1,6 +1,6 @@
 const triangle = (sideOne, sideTwo, sideThree) => {
   if(isTriangle(sideOne, sideTwo, sideThree)){
-    return triangleType(sideOne, sideTwo, sideThree);
+    return triangleType(sideOne, sideTwo, sideThree)
   }else{
     return "These sides do not form a triangle";
   }
@@ -17,7 +17,7 @@ const triangleType= (sideOne, sideTwo, sideThree) => {
 const isTriangle = (sideOne, sideTwo, sideThree) =>{
   return sideOne <= (sideTwo + sideThree) && sideTwo(sideOne + sideThree) && sideThree(sideOne + sideTwo);
 };
-$(document.ready(() => {
+$(document).ready(() => {
      $("form#fields").submit((event) =>{
        var fieldOne = parseInt($("input#field-one").val());
        var fieldTwo = parseInt($("input#field-two").val());
@@ -25,11 +25,10 @@ $(document.ready(() => {
        const result = triangle(sideOne, sideTwo, sideThree);
 
        sideOne = parseInt($("input#field-one").val(""));
-       sideTwo = parseInt($("inpuit#field-two").val(""));
+       sideTwo = parseInt($("input#field-two").val(""));
        sideThree = parseInt($("input#field-three").val(""));
 
        $("#result").append(result);
        event.preventDefault();
      });
-
 });

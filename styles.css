@@ -2,23 +2,17 @@ body{
   background: #0C172B;
   color: white;
 }
-.container{
-  display: flex;
-
-}
-.fields{
+#fields{
   color: white;
   top: 60%;
   margin: 0 100px 100px 0;
-  display: flex;
-  justify-content: space-between;
 }
 input{
   padding: 10px 20px;
   border-radius: 30px;
   margin: 10px;
   border-color: #45ffba;
-  border-image: none;    -webkit-rtl-ordering: none;
+  border-image: none;
   background-color: rgba(255, 255, 255, 0.9);
 }
 button{
