@@ -1,33 +1,35 @@
-$(document)(() => {
-     $form#fields.submit((event) {
+const triangle = (sideOne, sideTwo, sideThree) => {
+  if(isTriangle(sideOne, sideTwo, sideThree)){
+    return triangleType(sideOne, sideTwo, sideThree);
+  }else{
+    return "These sides do not form a triangle";
+  }
+}
+const triangleType= (sideOne, sideTwo, sideThree) => {
+  if(sideOne === sideTwo && sideTwo === sideThree){
+    return "Equilateral";
+  }else if(sideOne === sideThree || sideTwo === sideThree || sideOne === sideThree){
+    return "Isosceles";
+  }else{
+    return "Scalene";
+  }
+};
+const isTriangle = (sideOne, sideTwo, sideThree) =>{
+  return sideOne <= (sideTwo + sideThree) && sideTwo(sideOne + sideThree) && sideThree(sideOne + sideTwo);
+};
+$(document.ready(() => {
+     $("form#fields").submit((event) =>{
        var fieldOne = parseInt($("input#field-one").val());
        var fieldTwo = parseInt($("input#field-two").val());
        var fieldThree = parseInt($("input#field-three").val());
-       const triangles = (a,b,c) =>{
-         if (this instanceof triangle){
-           const this.a = a;
-           const this.b = b;
-           const this.c = c;
-         }else{
-           return new triangle(a,b,c);
-         }
-       };
-       triangles.prototype.kind= () => {
-         if(this.a === 0 || this.b === 0 || this.c === 0){
-           $("#not-triangle").show();
-         }else if(this.a < 0 || this.b < 0 || this.c < 0){
-           $("#invalid").show();
-         }else if (this.a + this.b <= this.c || this.a + this.c <= b || this.a <= this.c){
-           $("#invalid").show();
-         }else if(this.a === this.b && this.b ==== this.c){
-           $("#equilateral").show();
-         }else if(this.a === this.b || this.b === this.c || this.a === this.c){
-           $("#isosceles").show();
-         }else{
-           $("#scalene").show();
-         }
-       }
+       const result = triangle(sideOne, sideTwo, sideThree);
+
+       sideOne = parseInt($("input#field-one").val());
+       sideTwo = parseInt($("inpuit#field-two").val());
+       sideThree = parseInt($("input#field-three").val());
+
+       $("#result").append(result);
+       event.preventDefault();
      });
+
 });
-event.preventDefault()
-module.exports = triangles;

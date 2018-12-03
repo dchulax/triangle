@@ -27,8 +27,8 @@ button{
   border-radius: 25px;
   background-color: rgba(255, 45, 45, 0.5);
 }
-#equilateral,#isosceles,#scalene,#invalid,#not-triangle{
-  display: none;
+h1{
+  color: white;
 }
 .triangle{
   display: flex;
