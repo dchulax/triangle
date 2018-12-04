@@ -1,34 +1,18 @@
-const triangle = (sideOne, sideTwo, sideThree) => {
-  if(isTriangle(sideOne, sideTwo, sideThree)){
-    return triangleType(sideOne, sideTwo, sideThree)
-  }else{
-    return "These sides do not form a triangle";
-  }
-};
-const triangleType= (sideOne, sideTwo, sideThree) => {
-  if(sideOne === sideTwo && sideTwo === sideThree){
-    return "Equilateral";
-  }else if(sideOne === sideThree || sideTwo === sideThree || sideOne === sideThree){
-    return "Isosceles";
-  }else{
-    return "Scalene";
-  }
-};
-const isTriangle = (sideOne, sideTwo, sideThree) =>{
-  return sideOne <= (sideTwo + sideThree) && sideTwo(sideOne + sideThree) && sideThree(sideOne + sideTwo);
-};
-$(document).ready(() => {
-     $("form#fields").submit((event) =>{
-       var fieldOne = parseInt($("input#field-one").val());
-       var fieldTwo = parseInt($("input#field-two").val());
-       var fieldThree = parseInt($("input#field-three").val());
-       const result = triangle(sideOne, sideTwo, sideThree);
+function triangle (){
 
-       sideOne = parseInt($("input#field-one").val(""));
-       sideTwo = parseInt($("input#field-two").val(""));
-       sideThree = parseInt($("input#field-three").val(""));
-
-       $("#result").append(result);
-       event.preventDefault();
-     });
-});
+  var one = (document.getElementById("sideOne").value);
+  var two = (document.getElementById("sideTwo").value);
+  var three = (document.getElementById("sideThree").value);
+  var result;
+if((one+two > three) || (two+three > one || three+one > two)){
+  if(one===two && two===three){
+    result = "Equilateral";
+  }else if(one === two || two === three || three === one){
+    result = "Isosceles";
+  }else{
+    result = "Scalene";
+  }
+  console.log(result);
+  document.getElementById("outcome").innerHTML=result;
+}
+}

@@ -1,32 +1,17 @@
 body{
-  background: #0C172B;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  column-count: 3;
+  column-gap: 20px;
+  text-align: center;
+  background-color: #040d26;
   color: white;
 }
-#fields{
-  color: white;
-  top: 60%;
-  margin: 0 100px 100px 0;
-}
-input{
-  padding: 10px 20px;
-  border-radius: 30px;
-  margin: 10px;
-  border-color: #45ffba;
-  border-image: none;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-button{
-  max-height: 50px;
-  min-width: 150px;
-  border-radius: 25px;
-  background-color: rgba(255, 45, 45, 0.5);
-}
-h1{
-  color: white;
-}
+
 .triangle{
-  display: flex;
-  top: 40%;
+  top:30%;
   left: 50%;
   position: absolute;
   width: 600px;
@@ -47,4 +32,37 @@ h1{
   position: absolute;
   transform: rotate(45deg);
   background: #29ed9a;
+}
+#fields{
+  bottom : 80
+}
+button {
+    border-bottom-style: none;
+    margin: 20px;
+    padding: 5px 30px;
+    border-radius: 20px;
+    border-right-style: none;
+}
+input{
+  border-top-style: none;
+  margin: 20px;
+  padding: 5px 30px;
+  border-radius: 20px;
+  border-left-style: none;
+  border-top-style: none;
+  border-right-style: none;
+}
+#triangle{
+    margin-bottom: 30px;
+    column-span: all;
+    display: flex;
+    justify-content: start;
+}
+.output{
+  top:-20%;
+  left:50%;
+  font-size: 200px;
+}
+#outcome{
+  color: white;
 }

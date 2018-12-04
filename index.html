@@ -2,33 +2,37 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Triangle</title>
-    <link rel="shortcut icon" href="img/favicon-32x32.png">
+    <title>Tracker</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png">
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
   </head>
   <body>
-      <div class="container">
-          <div class="triangle"></div>
-          <form id="fields">
-            <div class="form-grp">
-              <label>First Side:</label>
-              <input id="field-one" type="text">
-            </div>
-            <div class="form-grp">
-              <label>Second Side:</label>
-              <input id="field-two" type="text">
-            </div>
-            <div class="form-grp">
-              <label>Third Side:</label>
-              <input id="field-three" type="text">
-            </div>
-            
-          </form>
-          <button type="submit" class="submit">Send Request</button>
-          <h1 id="result"></h1>
+    <div class="container">
 
-     </div>
+      <div class="triangle">
+        <h1>Triangle Tracker</h1>
+      </div>
+
+      <div class="triangle-tracker">
+        <form id="fields" method="post" action="">
+          <fieldset>
+             <legend><h1>Triangle Tracker</h1></legend>
+             <label for="">First Side</label>
+             <input id="sideOne" type="number" min="1" name="field1"><br>
+             <label for="">Second Side</label>
+             <input id="sideTwo" type="number" min="1" name="field2"><br>
+             <label for="">Third Side</label>
+             <input id="sideThree" type="number" min="1" name="field3"><br>
+             <button type="button" name="button" onclick="triangle()">Get Results</button>
+             <button type="reset" value="reset">Reset</button>
+          </fieldset>
+        </form>
+      </div>
+      
+      <div class="output">
+        <output id="outcome" name="output" readonly></output>
+      </div>
+    </div>
   </body>
 </html>
